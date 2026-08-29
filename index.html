@@ -32,14 +32,14 @@ main{max-width:1450px;margin:42px auto;padding:0 22px}h1{font-size:30px;margin:0
 </main>
 <script>
 const items=[
-['/carrot_page/assets/item1.jpg','매직스쿨버스 원서 + cd','15,000원','사당동 · 끌올 20분 전'],
-['/carrot_page/assets/item2.jpg','이즈앤트리 어니언 뉴페어 겔크림 50...','15,000원','사당동 · 끌올 20분 전'],
-['/carrot_page/assets/item3.jpg','(미사용) 샤넬 레 베쥬 골든 글로우 파우더','35,000원','사당동 · 21분 전'],
-['/carrot_page/assets/item4.jpg','체크무늬 손잡이 바구니','2,000원','사당동 · 끌올 25분 전'],
-['/carrot_page/assets/item5.jpg','차콜 스트링 조절 원피스','12,000원','사당동 · 28분 전'],
-['/carrot_page/assets/item6.jpg','레오파드 플리츠 롱 원피스(1회실착)','18,000원','사당동 · 31분 전'],
-['/carrot_page/assets/item7.jpg','유니클로 플로럴 원피스 L','10,000원','사당동 · 35분 전'],
-['/carrot_page/assets/item8.jpg','폴 프랭크 수영복 (새상품)','8,000원','사당동 · 40분 전']];
+['item1.jpg','매직스쿨버스 원서 + cd','15,000원','사당동 · 끌올 20분 전'],
+['item2.jpg','이즈앤트리 어니언 뉴페어 겔크림 50...','15,000원','사당동 · 끌올 20분 전'],
+['item3.jpg','(미사용) 샤넬 레 베쥬 골든 글로우 파우더','35,000원','사당동 · 21분 전'],
+['item4.jpg','체크무늬 손잡이 바구니','2,000원','사당동 · 끌올 25분 전'],
+['item5.jpg','차콜 스트링 조절 원피스','12,000원','사당동 · 28분 전'],
+['item6.jpg','레오파드 플리츠 롱 원피스(1회실착)','18,000원','사당동 · 31분 전'],
+['item7.jpg','유니클로 플로럴 원피스 L','10,000원','사당동 · 35분 전'],
+['item8.jpg','폴 프랭크 수영복 (새상품)','8,000원','사당동 · 40분 전']];
 const grid=document.querySelector('#grid');
 items.forEach((x,i)=>{const el=document.createElement('article');el.className='card';el.innerHTML=`<img class="photo" src="assets/${x[0]}" alt="${x[1]}"><div class="name">${x[1]}</div><div class="price">${x[2]}</div><div class="meta">${x[3]}</div>`;grid.appendChild(el)});
 document.querySelector('.reset').onclick=()=>alert('필터가 초기화되었습니다.');
