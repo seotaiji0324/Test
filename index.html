@@ -41,7 +41,7 @@ const items=[
 ['item7.jpg','유니클로 플로럴 원피스 L','10,000원','사당동 · 35분 전'],
 ['item8.jpg','폴 프랭크 수영복 (새상품)','8,000원','사당동 · 40분 전']];
 const grid=document.querySelector('#grid');
-items.forEach((x,i)=>{const el=document.createElement('article');el.className='card';el.innerHTML=`<img class="photo" src="./carrot_page/assets/${x[0]}" alt="${x[1]}"><div class="name">${x[1]}</div><div class="price">${x[2]}</div><div class="meta">${x[3]}</div>`;grid.appendChild(el)});
+items.forEach((x,i)=>{const el=document.createElement('article');el.className='card';el.innerHTML=`<img class="photo" src="/carrot_page/assets/${x[0]}" alt="${x[1]}"><div class="name">${x[1]}</div><div class="price">${x[2]}</div><div class="meta">${x[3]}</div>`;grid.appendChild(el)});
 document.querySelector('.reset').onclick=()=>alert('필터가 초기화되었습니다.');
 document.querySelector('.locate').onclick=()=>alert('현재 위치 설정 기능 예시입니다.');
 document.querySelectorAll('.box,.radio').forEach(x=>x.onclick=()=>{x.style.background=x.style.background?'':'#ff6f0f'});
